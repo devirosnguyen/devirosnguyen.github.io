@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deviros Nguyen</title>
+<meta name="description" content="Gameplay systems, AI and tools for every kind of game. Code-first assets for Unreal Engine and Unity.">
+<meta property="og:title" content="Deviros Nguyen">
+<meta property="og:description" content="Gameplay systems, AI and tools for every kind of game.">
+<meta property="og:image" content="https://devirosnguyen.github.io/img/cover.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+	--bg: #0b0e14;
+	--panel: #121722;
+	--line: #232b3a;
+	--text: #eef0f5;
+	--dim: #9aa3b2;
+	--accent: #ff9e1f;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body { font: 17px/1.6 "Barlow", "Segoe UI", sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+.cover { width: 100%; aspect-ratio: 4 / 1; min-height: 140px; background: #07090d url(img/cover.jpg) center / cover no-repeat; border-bottom: 1px solid var(--line); }
+.head { display: flex; gap: 24px; align-items: flex-end; margin-top: -64px; }
+.avatar { width: 128px; height: 128px; border-radius: 50%; border: 4px solid var(--bg); background: var(--bg); flex: none; }
+.head h1 { font: 700 40px/1.1 "Barlow Semi Condensed", sans-serif; letter-spacing: .02em; margin: 0 0 6px; }
+.head p { margin: 0 0 10px; color: var(--accent); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; font-size: 15px; }
+
+section { margin: 48px 0; }
+h2 { font: 700 15px/1 "Barlow Semi Condensed", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); margin: 0 0 16px; }
+.lead { font-size: 21px; max-width: 760px; }
+ul.points { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+ul.points li { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; color: var(--dim); font-size: 15px; }
+ul.points b { display: block; color: var(--text); font-size: 17px; margin-bottom: 4px; }
+
+.product { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: 22px 24px; }
+.product h3 { margin: 0 0 4px; font: 700 24px/1.2 "Barlow Semi Condensed", sans-serif; }
+.tag { display: inline-block; font-size: 13px; color: var(--dim); border: 1px solid var(--line); border-radius: 99px; padding: 1px 10px; margin: 0 6px 10px 0; }
+.product p { margin: 0 0 12px; color: var(--dim); }
+.links a { margin-right: 18px; font-weight: 500; }
+
+footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--dim); font-size: 14px; }
+
+@media (max-width: 600px) {
+	body { font-size: 16px; }
+	.wrap { padding: 0 16px; }
+	.head { flex-direction: column; align-items: flex-start; gap: 12px; margin-top: -48px; }
+	.avatar { width: 96px; height: 96px; }
+	.head h1 { font-size: 32px; }
+	.lead { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+<div class="cover" role="img" aria-label="Deviros Nguyen, gameplay and AI programmer"></div>
+<main class="wrap">
+	<div class="head">
+		<img class="avatar" src="img/avatar.png" alt="DN logo">
+		<div>
+			<h1>Deviros Nguyen</h1>
+			<p>Gameplay &amp; AI programmer</p>
+		</div>
+	</div>
+
+	<section>
+		<h2>About</h2>
+		<p class="lead">Gameplay systems, AI and tools for every kind of game.</p>
+		<p>I make code-first assets for game developers: AI and NPC behavior, gameplay systems, multiplayer, UI and editor tools, for any genre from action and RPG to strategy and casual. I publish for Unreal Engine on Fab, and for Unity on the Unity Asset Store.</p>
+	</section>
+
+	<section>
+		<h2>What you get</h2>
+		<ul class="points">
+			<li><b>Code-first</b>Logic in clean, readable code. Tuning lives in data you edit without touching the source.</li>
+			<li><b>Multiplayer-aware</b>The server decides, clients display. Tested on a dedicated server with real clients.</li>
+			<li><b>Tested</b>Every feature on a product page is backed by automated tests or measured runs.</li>
+			<li><b>Extensible</b>Each package ships with a guide to extend it from your own project.</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Products</h2>
+		<div class="product">
+			<h3>Ultimate First-Person Shooter</h3>
+			<span class="tag">Unreal Engine 5</span><span class="tag">C++ plugin</span><span class="tag">Coming soon on Fab</span>
+			<p>Server-authoritative shooter AI for multiplayer games: bots that fight like players, squads, cover and flanking, drones, turrets, a three-phase boss and six ready-to-play modes.</p>
+			<div class="links"><a href="https://devirosnguyen.github.io/UltimateFPS-Docs/">Documentation</a></div>
+		</div>
+	</section>
+
+	<section>
+		<h2>Contact</h2>
+		<p>Questions, bug reports, feature requests: <a href="mailto:devirosnguyen@gmail.com">devirosnguyen@gmail.com</a></p>
+	</section>
+</main>
+<footer><div class="wrap">&copy; 2026 Deviros Nguyen</div></footer>
+</body>
+</html>
